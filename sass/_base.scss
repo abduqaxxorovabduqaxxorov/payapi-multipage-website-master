@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+	--dark-pink: #ba4270;
+	--link-water-white: #fbfcfe;
+	--san-juan-blue: #36536b;
+	--mirage-blue: #1b262f;
+	--charm-pink: #da6d97;
+	--light-san-juan-blue: #6c8294;
+	--body-bg-color: #edf3f8;
+	--box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+	--error: #d51a52;
+	--success: #00b998;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 62.5%;
+
+	@include respond(tab-port) {
+		font-size: 57.5%;
+	}
+
+	@include respond(mobileXS) {
+		font-size: 52.5%;
+	}
+}
+
+body {
+	font-family: 'Public Sans', sans-serif;
+	font-size: 1.6rem;
+	background: var(--body-bg-color);
+	color: var(--light-san-juan-blue);
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'DM Serif Display', sans-serif;
+	color: var(--san-juan-blue);
+}
+
+h2 {
+	line-height: 5.6rem;
+	font-weight: 400;
+}
+
+p {
+	color: var(--light-san-juan-blue);
+
+	@include respond(mobileXS) {
+		font-size: 1.5rem;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+// Base Fail The end....
+
